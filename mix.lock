@@ -1,0 +1,2 @@
+%{"redbug": {:hex, :redbug, "1.0.0", "b36fa00de90ee160e74fcc178d4cca3d877c1ce704168799f954c8ea98e2275a", [], [], "hexpm"},
+  "rexbug": {:hex, :rexbug, "0.1.0", "3858614b4d88164fecc5b5c3c2dd68d5971c260cd63c1d1b0cc6ff539fab0da8", [], [{:redbug, "~> 1.0", [hex: :redbug, repo: "hexpm", optional: false]}], "hexpm"}}
