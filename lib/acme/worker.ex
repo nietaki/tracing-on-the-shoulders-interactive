@@ -38,12 +38,12 @@ defmodule Acme.Worker do
 
 
   def handle_cast(:do_the_work, state) do
-    # exercises 1&2
+    # exercise 1
     _all_tables = :ets.all()
     _some_tuple = :ets.lookup(@ets_table_name, :some_key)
     _some_tuple = :ets.lookup(@ets_table_name, :not_here)
 
-    #exercise 3
+    #exercise 2
     _important = Palindrome.is_palindrome?("madam")
     _also_important = Palindrome.is_palindrome?("don't nod")
 
