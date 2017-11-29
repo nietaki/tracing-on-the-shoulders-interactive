@@ -1,5 +1,6 @@
 defmodule Acme.Worker do
   alias __MODULE__, as: This
+  alias Acme.Palindrome
 
   use GenServer
 
@@ -41,6 +42,10 @@ defmodule Acme.Worker do
     _all_tables = :ets.all()
     _some_tuple = :ets.lookup(@ets_table_name, :some_key)
     _some_tuple = :ets.lookup(@ets_table_name, :not_here)
+
+    #exercise 3
+    _important = Palindrome.is_palindrome?("madam")
+    _also_important = Palindrome.is_palindrome?("don't nod")
 
     {:noreply, state}
   end
